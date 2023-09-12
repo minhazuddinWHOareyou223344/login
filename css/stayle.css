@@ -1,0 +1,792 @@
+
+/* -----------------------------------------------------------
+Them name : bizzency | Html teamplate 
+Autor : Minhaz uddin 
+Author Ulr : -------------
+Version:1.0
+
+-----------------------------------------------------------------------------
+
+
+*/
+/* --------------------------------------------------------------------------
+
+
+1  header
+2  about
+3  fortfolio
+4  services
+5  
+6  
+7
+8
+9
+10
+11
+12
+13
+
+
+---------------------------------------------------------------------------------
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+ list-style: none;
+}
+:root{
+    --primarycolor:#353535;
+    --secondarycouler:#744fa0;
+     --threecouler:#f1f1f1;
+     --fouercouler:#f5f5f5;
+     
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-size: 14px;
+    font-weight:400;
+    overflow-x: hidden;
+    color: var(--primarycolor);
+    font-family: 'Abril Fatface', cursive;
+ 
+}
+/* your section start hear */
+#your{
+    background-image: url(../img/banner-img.jpg);
+    height: 600px;
+    padding: 50px 0px;
+    background-position: center;
+    background-size: cover;
+     background-repeat: no-repeat;
+   color: white !important;
+   
+}
+#your .yourtext{
+    width: 400px;
+    text-align: right;
+  margin: auto;
+  margin-right: 0px;
+}
+#your .yourimg .row{
+    height: 600px;
+}
+
+
+#your .yourimg .yourtext h1{
+    font-size: 56px;
+
+}
+#your .yourimg .yourtext h1 span{
+    color: var(--secondarycouler);
+}
+#your .yourimg .yourtext h3{
+    font-size: 32px;
+}
+#your .yourimg .yourtext  p{
+    font-size: 14px;
+    text-align: justify;
+}
+#your .yourimg .yourtext .youercard {
+   width: 180px;
+   height: 60px;
+   background-color: white;
+   color: var(--primarycolor);
+margin-right: 10px;
+border-radius: 10px;
+}
+#your .yourimg .yourtext .youercard h5{
+    font-size: 14px;
+    text-align: center;
+}
+#your .yourimg .yourtext .youercard h4{
+    font-size: 18px;
+    text-align: center;
+}
+#your .yourimg .yourtext .youercards h5{
+    font-size: 14px;
+    text-align: center;
+}
+#your .yourimg .yourtext .youercards h4{
+    font-size: 18px;
+    text-align: center;
+}
+#your .yourimg .yourtext .youercards{
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    color: var(--primarycolor);
+ margin-right: 10px;
+ border-radius: 10px;
+ 
+}
+#your .yourimg .yourtext .youercard:hover{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+}
+#your .yourimg .yourtext .youercards:hover{
+    background-color: var(--secondarycouler);
+    color: var(--threecouler);
+}
+
+/* you section end hear */
+/* abuot section stert hear */
+#about {
+    margin: 100px  0px;
+}
+#about .aboutext h3{
+    font-size: 24px;
+    text-align: center;
+}
+#about .aboutext p{
+   
+    font-size: 14px;
+    text-align: center;
+}
+
+#about  .aboutext span img{
+    display: inline-block;
+    text-align: center;
+margin-left: 40%;
+margin-bottom: 40px;
+}
+#about .aboutimg img{
+    display: inline-block;
+ margin-left: 20%;
+}
+
+/* about section end harr */
+/* our section start hear */
+#our{
+    background-color: #f1f1f1;
+}
+#our h3{
+    text-align: center;
+}
+#our span img{
+    display: inline-block;
+    margin-left:45%;
+    margin-bottom: 20px;
+}
+#our .ourone .ouroneimg span{
+    font-size: 32px;
+    color: var(--primarycolor);
+}
+#our .ourone .ouroneimg span:hover{
+    color: var(--secondarycouler);
+}
+#our .ourone .ouronecard:hover{
+    color: var(--secondarycouler);
+}
+#our .ourtwo img{
+    display: inline-block;
+    margin-left: 15%;
+}
+#our .ourthree h4{
+    margin-top: 100px;
+}
+#our .ourthree{
+    text-align: right;
+}
+/* our section end hear */
+/* dj section start hear */
+#hots .hotsslider{
+    width: 300px;
+    height: 200px;
+}
+/* dj section emnd hear */
+
+
+
+
+
+
+
+
+
+/* portfolio section start hear  */
+#Portfolio{
+    position: relative;
+}
+#Portfolio  .portfoliocard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#Portfolioo {
+  
+padding-top: 100px;
+}
+#Portfolioo span img{
+    display: inline-block;
+    margin-left: 45%;
+    margin-bottom: 50px;
+}
+#Portfolioo h3{
+    text-align: center;
+    font-size: 32px;
+    
+
+}
+#Portfolio .portfoliocard{
+   
+    width: 350px;
+ height: 420px;
+    display: inline-block;
+    margin-left: 50px;
+   
+}
+.portfoliocard .overlayy{
+    position: absolute;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+  
+
+} 
+.portfoliocard .overlayy a{
+     display: inline-block;
+ margin-top: -30%;
+ transform: translate(-50%);
+
+
+}
+.portfoliocard .overlayy p{
+    font-size: 20px;
+    text-align: center;
+  color: var(--primarycolor);
+  box-shadow: rgba(249, 244, 244, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+width: 325px;
+height: 75px;
+line-height: 75px;
+transition: all  0.4s ease-in-out;
+}
+.slick-center .overlayy{
+    opacity: 1;
+    visibility: visible;
+    transition: 500ms;
+    transform: translateX(1.2);
+  }
+ 
+  .overlayy .arrows  span.laftarrows{
+    font-size: 25px;
+    position: absolute;
+ color: var(--primarycolor);
+cursor: pointer;
+
+
+width: 40px;
+height: 40px;
+background-color: var(--secondarycouler);
+border-radius: 50%;
+text-align: center;
+list-style: 40px;
+
+}
+.overlay .arrows  span.rightarrows{
+    font-size: 25px;
+    position: absolute;
+color: var(--primarycolor);
+
+width: 40px;
+height: 40px;
+background-color: var(--secondarycouler);
+border-radius: 50%;
+text-align: center;
+list-style: 40px;
+
+  
+  cursor: pointer;
+}
+.overlay .arrows  span.laftarrows:hover{
+    color: var(--primarycolor);
+    transition: 500ms;
+}
+.overlay .arrows  span.rightarrows:hover{
+    color: var(--primarycolor);
+    transition: 500ms;
+}
+/* #Portfolio {
+    position: relative;
+ }
+ 
+
+ .portfoliocard  .slick-slide{
+ 
+transition: all  0.4s ease-in-out;
+padding: 40px 0px;
+}
+.portfoliocard.slick-slide img{
+    max-width: 100%;
+    transition: all  0.4s ease-in-out;
+    margin-left: 10px;
+    transform: scale(1.3);
+}
+ .slick-center .portfoliocard {
+    transform: scale(0.9);
+    margin-top: -50px;
+   
+
+} */
+.portfoliocard .arrowss  span.laftarrows{
+    font-size: 25px;
+color: var(--primarycolor);
+position: absolute;
+top: -170px;
+  left: -20px;
+  width: 40px;
+height: 40px;
+  cursor: pointer;
+  background-color: var(--secondarycouler);
+  border-radius: 50%;
+  text-align: center;
+
+}
+.portfoliocard .arrowss  span.rightarrows{
+    font-size: 25px;
+    position: absolute;
+color: white;
+right: -20px;
+width: 40px;
+height: 40px;
+background-color: var(--secondarycouler);
+border-radius: 50%;
+text-align: center;
+top: -170px;
+
+  
+  cursor: pointer;
+}
+.portfoliocard .arrowss  span.laftarrows:hover{
+    color: var(--primarycolor);
+    transition: 500ms;
+}
+.portfoliocard .arrowss  span.rightarrows:hover{
+    color: var(--primarycolor);
+    transition: 500ms;
+}
+#Portfolioo a{
+    width: 180px;
+    height: 50px;
+background-color: var(--secondarycouler);
+   display: inline-block;
+   color:var(--primarycolor);
+   line-height: 50px;
+   text-align: center;
+   left: 50%;
+   font-size: 16px;
+  text-align: center;
+ border-radius: 10px;
+margin-left: 50%;
+transform: translate(-50%);
+margin-top:60px ;
+margin-bottom: 100px;
+}
+.slick-slide img{
+    max-width: 100%;
+    transition: all  0.4s ease-in-out;
+    margin-left: 10px;
+    transform: scale(0.9);
+}
+.slick-center{
+    transform: scale(1.3);
+   
+
+}
+/* djs section end hear */
+/* video section start hear */
+#best h3{
+    text-align: center;
+    font-size: 24px;
+}
+#best .besteo img{
+    display: inline-block;
+    margin-left: 45%;
+margin-bottom: 50px;
+}
+
+/* video section end hear */
+/* plan section start hear */
+#plann h3{
+    text-align: center;
+    font-size: 24px;
+}
+#plann span img{
+    display: inline-block;
+    margin-left: 45%;
+    margin-bottom: 50px;
+}
+#plan .plancard{
+    width: 280px;
+    height: 440px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+#plan .planslider .plancard h2{
+    font-size: 18px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+#plan .planslider .plancards{
+    height: 160px;
+background-color: white !important;
+text-align: center;
+}
+#plan .planslider .plancard  .plancards h3{
+    font-size: 47px;
+    background-color: white;
+    width:280px ;
+    margin-left: -10px;
+    padding-bottom: 10px;
+
+}
+#plan .planslider .plancard  .plancards p{
+    background-color: white;
+    font-size: 18px;
+    width:280px ;
+    margin-left: -10px;
+}
+#plan .planslider .plancard ul li{
+    text-align: center;
+    margin: 20px 0px;
+}
+#plan .planslider .plancard ul{
+    padding: 05px 0px;
+}
+#plan .planslider .plancard p{
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    margin: auto;
+    border: 1px solid black;
+    line-height: 40px;
+}
+/* plan section end hear */
+/* team section start hear */
+#teamm{
+margin-top: 100px;
+}
+#teamm h3{
+    font-size: 24px;
+    text-align: center;
+}
+#teamm span img{
+    display: inline-block;
+    margin-left: 45%;
+    margin-bottom: 50px;
+}
+#team .teamcard {
+    width: 370px;
+    height: 370px;
+    display: inline-block;
+}
+#team .slick-center{
+    transform: scale(0.8);
+height: 500px;
+text-align: center;
+  
+}
+.teamcard .overlay{
+    /* position: absolute;
+   
+    display: flex; */
+    justify-content: center;
+    align-items: center;
+ 
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+    text-align: center;
+  
+
+} 
+.slick-center .overlay{
+    opacity: 1;
+    visibility: visible;
+    transition: 500ms;
+    transform: translateX(1.5);
+
+}
+.teamcard .overlayy a{
+    display: inline-block;
+margin-top: -80%;
+/* transform: translate(-50%); */
+
+
+}
+/* team section ends hear */
+/* ouer testimonial  start Hear*/
+#testimonial {
+  background-image: url(../img/testbg-img01.jpg);
+  padding: 60px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.testimonialTextSlide {
+  text-align: center;
+  color: white;
+}
+.testimonialTextSlide p {
+  font-size: 14px;
+}
+
+.testimonialTextSlide h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.testimonialImageSlider {
+  margin-top: 20px;
+}
+.testimonialImageSlide {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+
+.testimonialImageSlide.slick-center {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.testimonialImageSlide .ring {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.testimonialImageSlide .ring::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primaryColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.3);
+}
+
+
+.testimonialImageSlide.slick-center .ring::after{
+  opacity: 1;
+}
+
+#testimonial .testimonialImageSlider .slick-track {
+  padding: 20px 0;
+}
+
+.testimonialImageSlide .ring img {
+  margin: auto;
+}
+#test{
+  padding: 60px 0px;
+}
+#test h2{
+  text-align: center;
+}
+#test .tos  p{
+  text-align: center;
+  width: 500px;
+  margin: auto;
+
+
+}
+#test h3{
+    text-align: center;
+}
+#test span img{
+    display: inline-block;
+    margin-left: 45%
+}
+
+/* ouer testimonial  ends Hear*/
+/* get section start hear  */
+#get h3{
+    text-align: center;
+    font-size: 24px;
+    
+}
+#get span img {
+    display: inline-block;
+    margin-left: 45%;
+    
+}
+#get{
+    margin:100px 0px;
+}
+/* grt section end hear */
+/* ipbal section start hear */
+#iqbal{
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  background: #0D6EFD;
+  align-items: center;
+  justify-content: center;
+}
+::selection{
+  color: #fff;
+  background: #0D6EFD;
+}
+.wrapper{
+  width: 715px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+}
+.wrapper header{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper form{
+  margin: 35px 30px;
+}
+.wrapper form.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+form .dbl-field{
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+.dbl-field .field{
+  height: 50px;
+  display: flex;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+.wrapper form i{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #ccc;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.field input::placeholder,
+.message textarea::placeholder{
+  color: #ccc;
+}
+.field input:focus,
+.message textarea:focus{
+  padding-left: 47px;
+  border: 2px solid #0D6EFD;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: #0D6EFD;
+}
+form .message{
+  position: relative;
+}
+form .message i{
+  top: 30px;
+  font-size: 20px;
+}
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 15px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+.message textarea:focus{
+  padding-top: 14px;
+}
+form .button-area{
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.button-area button{
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #0D6EFD;
+
+}
+.button-area button:hover{
+  background: #025ce3;
+}
+.button-area span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+@media (max-width: 600px){
+  .wrapper header{
+    text-align: center;
+  }
+  .wrapper form{
+    margin: 35px 20px;
+  }
+  form .dbl-field{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  form .dbl-field .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  form .message textarea{
+    resize: none;
+  }
+  form .button-area{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .button-area button{
+    width: 100%;
+    padding: 11px 0;
+    font-size: 16px;
+  }
+  .button-area span{
+    margin: 20px 0 0;
+    text-align: center;
+  }
+}
+
+
+
+  
+/* ipbal sectionend hear */
